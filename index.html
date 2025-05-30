@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>עבודת 30% לבגרות בלשון</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onmousemove="coordinate(event)">
+    <div class="landing-container"></div>
+
+    <div class="quiz-container">
+      <header class="quiz-header">
+        <h2 id="quiz-title">טריוויית הצורות - לשון</h2>
+        <div class="quiz-timer">
+          <span class="material-symbols-rounded">timer</span>
+          <p id="timer-duration">20 שניות</p>
+        </div>
+      </header>
+
+      <div class="quiz-content">
+        <h1 class="quiz-question"></h1>
+        <ul class="answer-options"></ul>
+      </div>
+
+      <div class="quiz-footer">
+        <p class="question-status"><b>1</b> מתוך <b>30</b> שאלות</p>
+        <button class="next-question-btn">
+          המשך
+          <span class="material-symbols-rounded">arrow_left_alt</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="result-container">
+      <img src="./images/quiz-over.png" alt="quiz-over" id="result-img" />
+      <h2 id="result-title">סיימת את השאלון!</h2>
+      <p id="result-message"></p>
+      <button class="try-again-btn">נסה שוב</button>
+    </div>
+
+    <span class="material-symbols-rounded" id="help">help</span>
+
+    <svg class="blobs" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#517aec"
+        d="M53.4,-54.8C68.3,-38.5,78.8,-19.3,78.4,-0.4C78.1,18.5,66.8,37.1,51.9,47.7C37.1,58.3,18.5,61,-1.7,62.7C-22,64.5,-44,65.2,-59.7,54.6C-75.4,44,-84.8,22,-82.4,2.4C-80,-17.2,-65.9,-34.4,-50.1,-50.7C-34.4,-67.1,-17.2,-82.4,1,-83.5C19.3,-84.5,38.5,-71.1,53.4,-54.8Z"
+        transform="translate(100 100)"
+      />
+    </svg>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
